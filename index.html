@@ -3,267 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Virtual Doctor – Free virtual healthcare with accepted Canadian health coverage. Connect with licensed physicians 24/7 for prescriptions, referrals, and medical advice." />
     <title>My Virtual Doctor</title>
-
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
   </head>
   <body>
-    <!-- header section -->
-    <header>
-      <div class="image-container">
-        <a href="#"
-          ><img
-            width="145"
-            height="185"
-            src="/images/My_Virtual_Doctor_Logos-withtrademark.png"
-            alt="My Virtual Doctor Logo"
-        /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Home Healthcare</a></li>
-          <li><a href="#">Partners With Us</a></li>
-          <li><a href="#">Resources</a></li>
-        </ul>
-      </nav>
 
-      <div class="button flex-button">
-        <a href="#">Book Appointment</a>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="header-logo" aria-label="My Virtual Doctor – Home">
+          <img
+            src="/images/My_Virtual_Doctor_Logos-withtrademark.png"
+            width="116"
+            height="148"
+            alt="My Virtual Doctor Logo"
+          />
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Home Healthcare</a></li>
+            <li><a href="#">Partners With Us</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn">Book Appointment</a>
       </div>
     </header>
 
-    <!-- main content -->
+    <!-- ===== MAIN ===== -->
     <main>
-      <!-- section one -->
-      <section class="hero">
-        <div class="hero-section">
-          <h1>
-          Connect with <br />
-          a Doctor Online Today
-        </h1>
-        <h2>My Virtual Doctor is <span class="highlight">Free</span> with Accepted Canadian Health Care!</h2>
-        <div class="button">
-          <a href="#">Book Appointment</a>
-        </div>
-        <h2 class="white">Accessible Healthcare Anytime Anywhere ®</h2>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Hero">
+        <div class="hero-inner">
+          <h1>Connect with<br />a Doctor Online Today</h1>
+          <p class="hero-sub">My Virtual Doctor is <strong>Free</strong> with Accepted Canadian Health Care!</p>
+          <a href="#" class="btn">Book Appointment</a>
+          <p class="hero-tagline">Accessible Healthcare Anytime Anywhere ®</p>
         </div>
       </section>
 
-      
-      <!-- section two -->
-      <section class="services">
-        <h2>
-          Our Doctors Are Available 24/7 For Your Health Concerns. <br />
-          Accessible Healthcare, Anytime, Anywhere ®
-        </h2>
-        <p>
-          No family doctor? No problem. Our licensed physicians, nurse
-          practitioners, and allied healthcare experts are available whenever
-          you need them. From weekend prescriptions to after-hours
-          consultations, health guidance, lab requisitions, and beyond, access
-          quality care within minutes or schedule an online appointment with a
-          specialist. Even if you have a family doctor but prefer not to wait,
-          we're here for you. Accessible Health, Anytime, anywhere. ™
-        </p>
+      <!-- About -->
+      <section class="about" aria-label="About our service">
+        <div class="container">
+          <h2>Our Doctors Are Available 24/7 For Your Health Concerns.<br />Accessible Healthcare, Anytime, Anywhere ®</h2>
+          <p>
+            No family doctor? No problem. Our licensed physicians, nurse practitioners, and allied healthcare experts
+            are available whenever you need them. From weekend prescriptions to after-hours consultations, health
+            guidance, lab requisitions, and beyond — access quality care within minutes or schedule an online
+            appointment with a specialist. Even if you have a family doctor but prefer not to wait, we're here for
+            you. Accessible Health, Anytime, Anywhere.&nbsp;™
+          </p>
         </div>
       </section>
-      
-      <!-- section three -->
-      <section class="flex-container">
-        <div class="flex-box">
-          <div class="flex-item">
-            <div class="logo">
-              <i class="fa-solid fa-capsules fa-2xl"></i>
-            </div>
-            <div class="flex-content">
+
+      <!-- Services -->
+      <section class="services" aria-label="Services we offer">
+        <div class="container">
+          <ul class="services-grid">
+            <li class="service-card">
+              <i class="fa-solid fa-capsules fa-2xl" aria-hidden="true"></i>
               <h3>Medical Advice</h3>
-              <p>Connect with professionals to receive medical advice today</p>
-            </div>
-          </div>
-
-          <div class="flex-item">
-            <div class="logo">
-              <i class="fa-solid fa-handshake fa-2xl"></i>
-            </div>
-            <div class="flex-content">
+              <p>Connect with professionals to receive medical advice today.</p>
+            </li>
+            <li class="service-card">
+              <i class="fa-solid fa-handshake fa-2xl" aria-hidden="true"></i>
               <h3>Referrals</h3>
-              <p>
-                Obtain referrals to specialists if you require further
-                evaluation
-              </p>
-            </div>
-          </div>
-
-          <div class="flex-item">
-            <div class="logo">
-              <i class="fa-brands fa-searchengin fa-2xl"></i>
-            </div>
-            <div class="flex-content">
+              <p>Obtain referrals to specialists if you require further evaluation.</p>
+            </li>
+            <li class="service-card">
+              <i class="fa-solid fa-file-prescription fa-2xl" aria-hidden="true"></i>
               <h3>Prescriptions</h3>
-              <p>Get online prescriptions and refills when you need them</p>
-            </div>
-          </div>
-
-          <div class="flex-item">
-            <div class="logo">
-              <i class="fa-solid fa-stethoscope fa-2xl"></i>
-            </div>
-            <div class="flex-content">
+              <p>Get online prescriptions and refills when you need them.</p>
+            </li>
+            <li class="service-card">
+              <i class="fa-solid fa-stethoscope fa-2xl" aria-hidden="true"></i>
               <h3>Injuries</h3>
-              <p>
-                Get help assessing and caring for sprains and other injuries
-              </p>
-            </div>
+              <p>Get help assessing and caring for sprains and other injuries.</p>
+            </li>
+          </ul>
+          <div class="section-cta">
+            <a href="#" class="btn">Book Appointment</a>
           </div>
-        </div>
-        <div class="button">
-          <a href="#">Book Appointment</a>
         </div>
       </section>
 
-      
-      <!-- section four -->
-      <section class="flex-container2">
-        <h2 class="capital">How we make it easy for you</h2>
-        <div class="flex-box2">
-          <div class="flex-item-2">
-            <div class="image">
-              <img 
-              width="350"
-              height="200"
-                src="/images/quick-assessment.jpg"
-                alt="Complete a quick assessment"
-              />
-            </div>
-            <div class="flex-content-2">
-              <h2>Complete a quick assessment</h2>
-              <p>
-                Provide us with essential information about your health
-                concerns, medical history, and any specific needs you may have.
-              </p>
-            </div>
-          </div>
+      <!-- How it Works -->
+      <section class="how-it-works" aria-label="How it works">
+        <div class="container">
+          <h2 class="section-heading">How We Make It Easy for You</h2>
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-image">
+                <img src="/images/quick-assessment.jpg" width="350" height="200" alt="Person completing a health assessment on a tablet" />
+              </div>
+              <div class="step-content">
+                <h3>Complete a Quick Assessment</h3>
+                <p>Provide us with essential information about your health concerns, medical history, and any specific needs you may have.</p>
+              </div>
+            </article>
 
-          <div class="flex-item-2">
-            <div class="image">
-              <img
-              width="350"
-              height="200"
-                src="/images/connect-doctor.jpg"
-                alt="Connect with a Doctor"
-              />
-            </div>
-            <div class="flex-content-2">
-              <h2>Connect with a Doctor</h2>
-              <p>
-                Through our platform, you'll be able to engage in a virtual
-                consultation with a healthcare professional who will provide
-                personalized care and support.
-              </p>
-            </div>
-          </div>
+            <article class="step-card">
+              <div class="step-image">
+                <img src="/images/connect-doctor.jpg" width="350" height="200" alt="Patient connecting with a doctor via video call" />
+              </div>
+              <div class="step-content">
+                <h3>Connect with a Doctor</h3>
+                <p>Through our platform, you'll engage in a virtual consultation with a healthcare professional who will provide personalised care and support.</p>
+              </div>
+            </article>
 
-          <div class="flex-item-2">
-            <div class="image">
-              <img 
-              width="350"
-              height="200"src="/images/fingertips.jpg" alt="Care at your fingertips" />
-            </div>
-            <div class="flex-content-2">
-              <h2>Care at your fingertips</h2>
-              <p>
-                At My Virtual Doctor, our ultimate goal is your well-being.
-                Whether you require a prescription for medication or a referral
-                to a specialist for further evaluation. With My Virtual Doctor,
-                achieving health success is just a virtual visit away.
-              </p>
-            </div>
+            <article class="step-card">
+              <div class="step-image">
+                <img src="/images/fingertips.jpg" width="350" height="200" alt="Person accessing healthcare on their phone" />
+              </div>
+              <div class="step-content">
+                <h3>Care at Your Fingertips</h3>
+                <p>Whether you need a prescription or a referral to a specialist, achieving health success is just a virtual visit away.</p>
+              </div>
+            </article>
           </div>
-        </div>
-        <div class="button">
-          <a href="#">Book Appointment</a>
+          <div class="section-cta">
+            <a href="#" class="btn">Book Appointment</a>
+          </div>
         </div>
       </section>
+
     </main>
-    
-    
-    <!-- footer section -->
-    <footer>
-      <div class="footer-section">
-        <div class="flex-box3">
-        <div class="flex-item-3 logo-box">
-          <div class="flex-logo">
-            <img
-            width="145"
-            height="185"
-              src="/images/My_Virtual_Doctor_Logos-withtrademark.png"
-              alt="My Virtual Doctor Logo"
-            />
-          </div>
-          <div class="flex-content-3">
-            <p>My Virtual Doctor is FREE with Accepted Canadian Health Care!</p>
-          </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <img
+            src="/images/My_Virtual_Doctor_Logos-withtrademark.png"
+            width="116"
+            height="148"
+            alt="My Virtual Doctor Logo"
+          />
+          <p>My Virtual Doctor is FREE with Accepted Canadian Health Care!</p>
         </div>
 
-        <div class="flex-item-3 care-flex">
+        <nav aria-label="Patient Care links">
           <h2>Patient Care</h2>
           <ul>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Online Doctor Visit</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Online prescription</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Home Healthcare</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Pharmacists</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Request an Appointment</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Online Doctor Visit</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Online Prescription</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Home Healthcare</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Pharmacists</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Request an Appointment</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="flex-item-3 pract-flex">
+        <nav aria-label="Our Practice links">
           <h2>Our Practice</h2>
           <ul>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> About</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Career</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> News</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> FAQs</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right" style="color: #00a0fd;"></i> Clinics</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Career</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> News</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> FAQs</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Clinics</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h2><a href="#">Contact</a></h2>
+          <ul class="social-links" aria-label="Social media links">
+            <li>
+              <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
 
-        <div class="flex-item-3 cont-flex">
-          <h2><a href="#">Contact</a></h2>
-          <div>
-            <ul class="final-flex">
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-            </ul>
-          </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>© 2025 My Virtual Doctor. All rights reserved.</p>
+          <a href="#">Privacy Policy</a>
         </div>
       </div>
-      
-      </div>
-      <div class="landing">
-        <div class="flex-box4">
-        <p>©2025 My Virtual Doctor. All rights reserved</p>
-        <span>Privacy Policy</span>
-      </div>
-      </div>
     </footer>
+
   </body>
 </html>
